@@ -1,6 +1,9 @@
 #ifndef COMMON_HPP_D2X
 #define COMMON_HPP_D2X
 
+#include <iostream>
+#include <string>
+
 #include <d2x/honly_logger.hpp>
 
 #define d2x_assert(expr) \

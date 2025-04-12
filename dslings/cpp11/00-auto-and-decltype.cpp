@@ -18,7 +18,7 @@
 
 int main() {
 
-    // 0. 一般变量
+    // 0. 变量
     int a = 1;
     auto a1 = a; // a1 的类型是 int
     int b = 2;

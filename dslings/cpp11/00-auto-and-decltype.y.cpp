@@ -18,6 +18,11 @@
 
 #include <iostream>
 #include <vector>
+#include <functional>
+
+int add_func(int a, int b) {
+    return a + b;
+}
 
 int main() {
 
@@ -37,10 +42,12 @@ int main() {
     }
     std::cout << std::endl;
 
-    D2X_YOUR_ANSWER add_func = [](int a, int b) { return a + b; };
     auto minus_func = [](int a, int b) { return a - b; };
 
-    std::vector<D2X_YOUR_ANSWER> funcVec = {add_func, minus_func};
+    std::vector<std::function<D2X_YOUR_ANSWER>> funcVec = {
+        add_func,
+        minus_func
+    };
 
     d2x_assert_eq(funcVec[0](1, 2), 3);
     d2x_assert_eq(funcVec[1](1, 2), -1);

@@ -33,7 +33,7 @@ D2X_YOUR_ANSWER minus_func(T1 a, T2 b) -> D2X_YOUR_ANSWER {
 int main() {
 
     d2x_assert_eq(minus_func(1, 2), -1);
-    d2x_assert_eq(minus_func(1.1, 2), -0.9);
+    d2x_assert_eq(minus_func(2, 1), 1);
     d2x_assert_eq(minus_func(1, 2.1), -1.1);
 
     D2X_WAIT
