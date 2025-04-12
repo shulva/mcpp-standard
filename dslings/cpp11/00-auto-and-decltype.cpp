@@ -18,7 +18,7 @@
 
 int main() {
 
-    // 0. 变量
+    // 0. 声明定义
     int a = 1;
     auto a1 = a; // a1 的类型是 int
     int b = 2;
