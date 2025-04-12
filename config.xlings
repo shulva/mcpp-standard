@@ -1,0 +1,17 @@
+xname = "mcpp-standard" -- project name
+
+-- xim-deps
+xdeps = {
+    vscode = "",
+    cpp = "", -- language
+}
+
+d2x = {
+    checker = {
+        name = "dslings",
+        editor = "vscode",
+    },
+    private = {
+        -- project private attributes
+    }
+}

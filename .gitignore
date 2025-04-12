@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+# d2x project files
+.xlings
