@@ -18,23 +18,23 @@
 
 int main() {
 
-    // 0. 一般变量
+    // 1. 表达式
     int a = 1;
-    auto a1 = a; // a1 的类型是 int
-    int b = 2;
-    D2X_YOUR_ANSWER b1 = b;
+    auto a1 = a + 2;
+    D2X_YOUR_ANSWER a2 = a + 2 + 1.1;
 
-    decltype(b) b2 = b; // b2 的类型是 int
-    D2X_YOUR_ANSWER a2 = a;
+    int b = 2;
+    D2X_YOUR_ANSWER b1 = a + 0.1;
+    decltype(a + b + 1.1) b2 = a + b + 1.1;
 
     char c = 'c';
-    D2X_YOUR_ANSWER c1 = c;
-    D2X_YOUR_ANSWER c2 = c;
+    D2X_YOUR_ANSWER c1 = 1 + c;
+    D2X_YOUR_ANSWER c2 = 2 + 'a';
 
-    d2x_assert_eq(a, a1);
-    d2x_assert_eq(a1, a2);
-    d2x_assert_eq(b, b1);
-    d2x_assert_eq(b1, b2);
+    d2x_assert_eq(a2, a + 2 + 1.1);
+    d2x_assert_eq(b1, a + 0.1);
+    d2x_assert_eq(c1, 1 + c);
+    d2x_assert_eq(c2, 2 + 'a');
 
     D2X_WAIT
 

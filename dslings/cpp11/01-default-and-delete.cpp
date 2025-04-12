@@ -13,9 +13,11 @@
 
 #include <d2x/common.hpp>
 
+#include <iostream>
+
 int main() {
 
-    // TODO ...
+    std::cout << "TODO..." << std::endl;
 
     D2X_WAIT
 

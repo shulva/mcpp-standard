@@ -15,3 +15,5 @@ d2x = {
         -- project private attributes
     }
 }
+
+--xlings_llm_config = "llm.config.xlings"

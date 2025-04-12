@@ -24,5 +24,6 @@
 }
 
 #define D2X_WAIT HONLY_LOGW("🥳 Delete the D2X_WAIT to continue...");
+#define D2X_YOUR_ANSWER  HONLY_LOGW("❌ | Please fill in your answer here to replace D2X_YOUR_ANSWER!");
 
 #endif

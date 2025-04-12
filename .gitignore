@@ -33,3 +33,5 @@
 
 # d2x project files
 .xlings
+.vscode
+llm.config.xlings

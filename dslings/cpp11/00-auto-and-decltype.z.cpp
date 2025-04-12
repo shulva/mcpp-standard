@@ -16,25 +16,25 @@
 
 #include <d2x/common.hpp>
 
+#include <iostream>
+#include <vector>
+
+// 3. 函数返回值类型
+
+auto add_func(int a, double b) -> decltype(a + b) {
+    return a + b;
+}
+
+template<typename T1, typename T2>
+D2X_YOUR_ANSWER minus_func(T1 a, T2 b) -> D2X_YOUR_ANSWER {
+    return a - b;
+}
+
 int main() {
 
-    // 0. 一般变量
-    int a = 1;
-    auto a1 = a; // a1 的类型是 int
-    int b = 2;
-    D2X_YOUR_ANSWER b1 = b;
-
-    decltype(b) b2 = b; // b2 的类型是 int
-    D2X_YOUR_ANSWER a2 = a;
-
-    char c = 'c';
-    D2X_YOUR_ANSWER c1 = c;
-    D2X_YOUR_ANSWER c2 = c;
-
-    d2x_assert_eq(a, a1);
-    d2x_assert_eq(a1, a2);
-    d2x_assert_eq(b, b1);
-    d2x_assert_eq(b1, b2);
+    d2x_assert_eq(minus_func(1, 2), -1);
+    d2x_assert_eq(minus_func(1.1, 2), -0.9);
+    d2x_assert_eq(minus_func(1, 2.1), -1.1);
 
     D2X_WAIT
 
