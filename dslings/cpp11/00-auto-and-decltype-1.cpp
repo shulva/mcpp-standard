@@ -1,7 +1,8 @@
 // mcpp-standard: https://github.com/Sunrisepeak/mcpp-standard
 // license: Apache-2.0
+// file: dslings/cpp11/00-auto-and-decltype-1.cpp
 //
-// Exercise/练习: cpp11 | 00 - auto and decltype
+// Exercise/练习: cpp11 | 00 - auto and decltype | 表达式类型推导
 //
 // Tips/提示: 使用 auto 和 decltype 修复代码中的错误
 //
@@ -11,8 +12,9 @@
 //
 // Auto-Checker/自动检测命令:
 //
-//   d2x checker auto-and-decltype
+//   d2x checker auto-and-decltype-1
 //
+
 
 #include <d2x/common.hpp>
 

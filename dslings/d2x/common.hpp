@@ -9,7 +9,7 @@
 #define d2x_assert(expr) \
 { \
     if (!(expr)) { \
-        HONLY_LOGW("❌ | %s", #expr); \
+        HONLY_LOGW("❌(error) | %s", #expr); \
     } else { \
         HONLY_LOGI_P("✅ | %s", #expr); \
     } \
@@ -27,6 +27,6 @@
 }
 
 #define D2X_WAIT HONLY_LOGW("🥳 Delete the D2X_WAIT to continue...");
-#define D2X_YOUR_ANSWER  HONLY_LOGW("❌ | Please fill in your answer here to replace D2X_YOUR_ANSWER!");
+#define D2X_YOUR_ANSWER
 
 #endif

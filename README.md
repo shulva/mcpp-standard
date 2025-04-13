@@ -2,6 +2,9 @@
 
 现代C++标准核心语言特性代码练习 - **动手学现代CPP核心特性**
 
+| [练习视频解读](https://space.bilibili.com/65858958/lists/5208246) - [论坛](https://forum.d2learn.org/category/20)    |
+| --- |
+
 ---
 
 ## 0.快速开始
@@ -60,7 +63,7 @@ d2x checker [name]
 ## 1.社区 | 交流
 
 - **即时交流(QQ群):** 167535744
-- **问题交流&讨论:** [论坛版块](https://forum.d2learn.org/category/5)
+- **练习代码/技术交流&讨论:** [论坛版块](https://forum.d2learn.org/category/20)
 
 ## 2.参与项目 | 社区贡献
 
