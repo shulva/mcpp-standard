@@ -2,7 +2,7 @@
 
 现代C++标准核心语言特性代码练习 - **动手学现代CPP核心特性**
 
-| [练习视频解读](https://space.bilibili.com/65858958/lists/5208246) - [论坛](https://forum.d2learn.org/category/20)    |
+| [代码/视频列表](videos/README.md) - [论坛](https://forum.d2learn.org/category/20) - [d2x工具](https://github.com/d2learn/xlings)    |
 | --- |
 
 ---

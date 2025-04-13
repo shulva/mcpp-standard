@@ -16,4 +16,4 @@ d2x = {
     }
 }
 
-xlings_llm_config = "llm.config.xlings"
+--xlings_llm_config = "llm.config.xlings"
