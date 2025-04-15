@@ -2,17 +2,17 @@
 
 现代C++标准核心语言特性代码练习 - **动手学现代CPP核心特性**
 
-| [代码/视频列表](videos/README.md) - [论坛](https://forum.d2learn.org/category/20) - [d2x工具](https://github.com/d2learn/xlings)    |
+| [代码/视频列表](videos/README.md) - [论坛](https://forum.d2learn.org/category/20) |
 | --- |
 
 ---
 
 ## 0.快速开始
 
-> 通过使用[d2x](https://github.com/d2learn/xlings)工具运行**编译器驱动开发模式**(自动化检测)进行代码练习
+> 通过使用[xlings](https://github.com/d2learn/xlings)获取项目并运行**编译器驱动开发模式**(自动化检测)来进行代码练习
 
 <details>
-  <summary>点击查看安装命令</summary>
+  <summary>点击查看xlings安装命令</summary>
 
 ---
 
@@ -34,28 +34,26 @@ Invoke-Expression (Invoke-Webrequest 'https://d2learn.org/xlings-install.ps1.txt
 
 </details>
 
-### 获取项目&配置环境
+### 获取项目
 
 > 下载项目到当前目录并自动配置本地环境
 
 ```bash
-xim -i d2x:mcpp-standard
+xlings install d2x:mcpp-standard
 ```
 
-### 基本用法
+### 练习代码自动检测
 
-> 运行练习自动检测程序, 根据控制台的错误提示完成对应的练习
-
-#### 进入练习自动检测程序
+> 进入项目目录`mcpp-standard`运行checker命令, 进入练习代码自动检测程序
 
 ```bash
-d2x checker
+xlings checker
 ```
 
-#### 指定练习进行检测
+### 指定练习进行检测
 
 ```bash
-d2x checker [name]
+xlings checker [name]
 ```
 
 > 注: 练习名支持模糊匹配
