@@ -29,4 +29,17 @@
 #define D2X_WAIT HONLY_LOGW("🥳 Delete the D2X_WAIT to continue...");
 #define D2X_YOUR_ANSWER
 
+template<typename F, typename... Args>
+class d2x_is_invocable {
+private:
+    template<typename U>
+    static auto test(U* f) -> decltype((*f)(std::declval<Args>()...), std::true_type());
+
+    template<typename>
+    static std::false_type test(...);
+
+public:
+    static constexpr bool value = decltype(test<F>(nullptr))::value;
+};
+
 #endif

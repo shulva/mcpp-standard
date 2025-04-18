@@ -1,19 +1,24 @@
 // mcpp-standard: https://github.com/Sunrisepeak/mcpp-standard
 // license: Apache-2.0
+// file: dslings/cpp11/02-final-and-override-0.cpp
 //
-// Exercise/练习: cpp11 | 01 - default and delete 
+// Exercise/练习: cpp11 | 02 - final and override
+//
+// Tips/提示: 
+//
 // Docs/文档:
-//   - https://en.cppreference.com/w/cpp/language/function#Function_definition
-//   - https://en.cppreference.com/w/cpp/language/function#Deleted_functions
+//   - https://en.cppreference.com/w/cpp/language/final
+//   - https://en.cppreference.com/w/cpp/language/override
 //
 // Auto-Checker/自动检测命令:
 //
-//   d2x checker default-and-delete
+//   d2x checker final-and-override
 //
 
 #include <d2x/common.hpp>
 
 #include <iostream>
+
 
 int main() {
 
