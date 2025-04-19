@@ -33,7 +33,7 @@ int main() { // 不要直接修改main函数中的代码
 
     A a;
     B b;
-    C c;
+    C c(1);
 
     D2X_WAIT
 

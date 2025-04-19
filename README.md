@@ -58,12 +58,22 @@ xlings checker [name]
 
 > 注: 练习名支持模糊匹配
 
-## 1.社区 | 交流
+## 1.练习及视频解读列表
+
+| c++标准 | 时间 | 核心语言特性 | 练习代码/视频 | 练习命令 | 备注 |
+| --- | --- | --- | --- | --- | --- |
+| 引导 | 2025/4/12 | **hello mcpp** | [code](dslings/hello-mcpp.cpp) | `xlings checker hello-mcpp` | 项目使用教程/引导 |
+| cpp11 | 2025/4/12 | **00-auto/decltype** | [code](dslings/cpp11/00-auto-and-decltype-0) / [video](https://www.bilibili.com/video/BV1xkdYYUEyH) | `xlings checker auto-and-decltype` | |
+| | 2025/4/16 | **+--->** decltype注意事项 | [code](dslings/cpp11/00-auto-and-decltype-4.cpp) / [video](https://www.bilibili.com/video/BV1KWoMYUEzW) | `xlings checker auto-and-decltype-4` | [补充](https://forum.d2learn.org/topic/82) |
+| | 2025/4/19 | **01-default/delete** | [code](dslings/cpp11/01-default-and-delete-0.cpp) / [video](https://www.bilibili.com/video/BV1B35pz5EN2) | `xlings checker default-and-delete` | |
+| | | | | |
+
+## 2.社区 | 交流
 
 - **即时交流(QQ群):** 167535744
 - **练习代码/技术交流&讨论:** [论坛版块](https://forum.d2learn.org/category/20)
 
-## 2.参与项目 | 社区贡献
+## 3.参与项目 | 社区贡献
 
 - **参与社区交流:** 反馈问题、参与社区问题讨论
 - **参与项目维护和开发:** 参与社区中问题处理、修复Bug、开发&优化新功能/模块
