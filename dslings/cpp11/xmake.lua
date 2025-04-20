@@ -36,3 +36,14 @@ target("cpp11-01-default-and-delete-2")
 
 target("cpp11-02-final-and-override-0")
     add_files("02-final-and-override-0.cpp")
+
+target("cpp11-02-final-and-override-1")
+    add_files("02-final-and-override-1.cpp")
+
+target("cpp11-02-final-and-override-2")
+    add_files("02-final-and-override-2.cpp")
+
+-- target: cpp11-03-trailing-return-type
+
+target("cpp11-03-trailing-return-type")
+    add_files("03-trailing-return-type.cpp")

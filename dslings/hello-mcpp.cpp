@@ -21,19 +21,19 @@
 
 #include <d2x/common.hpp>
 
-// 修改代码时可以观察到控制台"实时"的变化
+struct A {
+    A(int) {}
+};
+
+struct B {
+    A a;
+    B() = default;  // ❌ 技术上是非法的，但编译器不会报错（如果不调用
+    B(int x = 1) : a(1) {} // 默认构造函数，编译器会自动生成
+};
 
 int main() {
 
-    std::cout << "hello, mcpp!" << std:endl; // 0.修复这个编译错误
-
-    int a = 1.1; // 1.修复这个运行时错误, 修改int为double, 通过检查
-
-    d2x_assert_eq(a, 1.1); // 2.运行时检查点, 需要修复代码通过所有检查点(不能直接删除检查点代码)
-
-    D2X_YOUR_ANSWER b = a; // 3.修复这个编译错误, 给b一个合适的类型
-
-    d2x_assert_eq(b, 1); // 4.运行时检查点2
+    B b;
 
     D2X_WAIT // 5.删除或注释掉这个宏, 进入下一个练习(项目正式代码练习)
 
