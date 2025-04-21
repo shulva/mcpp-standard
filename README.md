@@ -66,6 +66,7 @@ xlings checker [name]
 | cpp11 | 2025/4/12 | **00-auto/decltype** | [code](dslings/cpp11/00-auto-and-decltype-0) / [video](https://www.bilibili.com/video/BV1xkdYYUEyH) | `xlings checker auto-and-decltype` | |
 | | 2025/4/16 | **+--->** decltype注意事项 | [code](dslings/cpp11/00-auto-and-decltype-4.cpp) / [video](https://www.bilibili.com/video/BV1KWoMYUEzW) | `xlings checker auto-and-decltype-4` | [补充](https://forum.d2learn.org/topic/82) |
 | | 2025/4/19 | **01-default/delete** | [code](dslings/cpp11/01-default-and-delete-0.cpp) / [video](https://www.bilibili.com/video/BV1B35pz5EN2) | `xlings checker default-and-delete` | |
+| | 2025/4/21 | **+->** 不可拷贝对像 | [code](dslings/cpp11/01-default-and-delete-1.cpp) / [video](https://www.bilibili.com/video/BV1Vg5tznE8o) | `xlings checker default-and-delete-1` | |
 | | | | | |
 
 ## 2.社区 | 交流
