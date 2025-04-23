@@ -1,8 +1,8 @@
 // mcpp-standard: https://github.com/Sunrisepeak/mcpp-standard
 // license: Apache-2.0
-// file: dslings/cpp11/02-final-and-override-0.cpp
+// file: dslings/cpp11/03-trailing-return-type.cpp
 //
-// Exercise/练习: cpp11 | 02 - trailing return type
+// Exercise/练习: cpp11 | 03 - trailing return type
 //
 // Tips/提示: 替换D2X_YOUR_ANSWER为正确的类型, 通过所有检查
 //

@@ -47,3 +47,11 @@ target("cpp11-02-final-and-override-2")
 
 target("cpp11-03-trailing-return-type")
     add_files("03-trailing-return-type.cpp")
+
+-- target: cpp11-04-rvalue-references
+
+target("cpp11-04-rvalue-references")
+    set_optimize("none")
+    add_cxflags("-fno-elide-constructors")
+    add_cxxflags("-fno-elide-constructors")
+    add_files("04-rvalue-references.cpp")
