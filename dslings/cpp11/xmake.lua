@@ -52,6 +52,10 @@ target("cpp11-03-trailing-return-type")
 
 target("cpp11-04-rvalue-references")
     set_optimize("none")
-    add_cxflags("-fno-elide-constructors")
     add_cxxflags("-fno-elide-constructors")
     add_files("04-rvalue-references.cpp")
+
+-- target: cpp11-04-rvalue-references
+
+target("cpp11-05-move-semantics-0")
+    add_files("05-move-semantics-0.cpp")
