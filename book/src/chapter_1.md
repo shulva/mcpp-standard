@@ -1,4 +1,4 @@
-# 简介
+# 使用说明
 
 **mcpp-standard**是一个强调动手实践的现代C++核心语言特性教程项目。基于[xlings(d2x)工具](https://github.com/Sunrisepeak/mcpp-standard)搭建了一套**编译器驱动开发模式**的代码练习, 可以自动化的检测练习代码的状态和跳转到下一个练习...
 
