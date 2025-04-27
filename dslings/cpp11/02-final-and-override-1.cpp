@@ -21,24 +21,25 @@
 #include <string>
 
 struct A {
-    virtual int func1() final {
+    virtual int func1() {
        return 1;
     }
-
-    int func2() {
-        return 2;
-    }
+    int func2() { return 2; }
 };
 
-struct B : A final {
+struct B : A  {
 
-    int func1() override {
+    int func1() {
         return 3;
     }
 
     int func2() {
         return 4;
     }
+};
+
+struct C : B {
+
 };
 
 int main() {

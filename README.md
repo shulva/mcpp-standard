@@ -2,7 +2,7 @@
 
 现代C++标准核心语言特性代码练习 - **动手学现代CPP核心特性**
 
-| [代码/视频列表](videos/README.md) - [论坛](https://forum.d2learn.org/category/20) |
+| [代码/视频列表](videos/README.md) - [论坛](https://forum.d2learn.org/category/20) - [使用说明](book/src/chapter_1.md) |
 | --- |
 
 ---
@@ -42,6 +42,8 @@ Invoke-Expression (Invoke-Webrequest 'https://d2learn.org/xlings-install.ps1.txt
 xlings install d2x:mcpp-standard
 ```
 
+注: 可以在项目目录执行`d2x book`命令, 本地打开使用说明书
+
 ### 练习代码自动检测
 
 > 进入项目目录`mcpp-standard`运行checker命令, 进入练习代码自动检测程序
@@ -60,13 +62,15 @@ xlings checker [name]
 
 ## 1.练习及视频解读列表
 
-| c++标准 | 时间 | 核心语言特性 | 练习代码/视频 | 练习命令 | 备注 |
-| --- | --- | --- | --- | --- | --- |
-| 引导 | 2025/4/12 | **hello mcpp** | [code](dslings/hello-mcpp.cpp) | `xlings checker hello-mcpp` | 项目使用教程/引导 |
-| cpp11 | 2025/4/12 | **00-auto/decltype** | [code](dslings/cpp11/00-auto-and-decltype-0) / [video](https://www.bilibili.com/video/BV1xkdYYUEyH) | `xlings checker auto-and-decltype` | |
-| | 2025/4/16 | **+--->** decltype注意事项 | [code](dslings/cpp11/00-auto-and-decltype-4.cpp) / [video](https://www.bilibili.com/video/BV1KWoMYUEzW) | `xlings checker auto-and-decltype-4` | [补充](https://forum.d2learn.org/topic/82) |
-| | 2025/4/19 | **01-default/delete** | [code](dslings/cpp11/01-default-and-delete-0.cpp) / [video](https://www.bilibili.com/video/BV1B35pz5EN2) | `xlings checker default-and-delete` | |
-| | 2025/4/21 | **+->** 不可拷贝对像 | [code](dslings/cpp11/01-default-and-delete-1.cpp) / [video](https://www.bilibili.com/video/BV1Vg5tznE8o) | `xlings checker default-and-delete-1` | |
+| c++标准 | 特性 | 标题 | 练习代码/视频 | 备注 |
+| --- | --- | --- | --- | --- |
+| **引导** | `项目使用教程/引导` | hello mcpp | [code](dslings/hello-mcpp.cpp) | |
+| **cpp11** | `00 - auto和decltype` | 类型推导 | [code](dslings/cpp11/00-auto-and-decltype-0) / [video](https://www.bilibili.com/video/BV1xkdYYUEyH) | |
+| | | decltype注意事项 | [code](dslings/cpp11/00-auto-and-decltype-4.cpp) / [video](https://www.bilibili.com/video/BV1KWoMYUEzW) | [补充](https://forum.d2learn.org/topic/82) |
+| | `01 - default和delete` | 控制默认构造函数生成 | [code](dslings/cpp11/01-default-and-delete-0.cpp) / [video](https://www.bilibili.com/video/BV1B35pz5EN2) | |
+| | | 类型对象行为控制示例 | [code](dslings/cpp11/01-default-and-delete-1.cpp) / [video](https://www.bilibili.com/video/BV1Vg5tznE8o) | |
+| | `02 - override和final` | 重写显示意图和编译器检查 | [code](dslings/cpp11/02-final-and-override-0.cpp) / [video](https://www.bilibili.com/video/BV1BdLJz6EKJ) | |
+| | | 继承和重现限制 | [code](dslings/cpp11/02-final-and-override-1.cpp) / [video](https://www.bilibili.com/video/BV1H1jAzTEYT) | |
 | | | | | |
 
 ## 2.社区 | 交流

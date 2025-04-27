@@ -1,3 +1,60 @@
+# 简介
+
+**mcpp-standard**是一个强调动手实践的现代C++核心语言特性教程项目。基于[xlings(d2x)工具](https://github.com/Sunrisepeak/mcpp-standard)搭建了一套**编译器驱动开发模式**的代码练习, 可以自动化的检测练习代码的状态和跳转到下一个练习...
+
+## 0.xlings工具安装
+
+> xlings包含教程项目所需的工具 - [更多工具细节](https://github.com/d2learn/xlings)
+
+**Linux**
+
+```bash
+curl -fsSL https://d2learn.org/xlings-install.sh | bash
+```
+
+or
+
+```bash
+wget https://d2learn.org/xlings-install.sh -O - | bash
+```
+
+**Windows - PowerShell**
+
+```bash
+Invoke-Expression (Invoke-Webrequest 'https://d2learn.org/xlings-install.ps1.txt' -UseBasicParsing).Content
+```
+
+## 1.获取项目及自动配置环境
+
+> 下载项目到当前目录并自动配置本地环境
+
+```bash
+xlings install d2x:mcpp-standard
+```
+
+### 练习代码自动检测
+
+> 进入项目目录`mcpp-standard`运行checker命令, 进入练习代码自动检测程序
+
+```bash
+xlings checker
+```
+
+### 指定练习进行检测
+
+```bash
+xlings checker [name]
+```
+
+> 注: 练习名支持模糊匹配
+
+## 2.自动化检测程序简介
+
+使用`xlings checker`进入自动化代码练习环境后, 工具会自动定位打开对应的练习代码文件, 并在控制台输出提示编译器的错误及提示信息。一般检测程序分两个检测阶段: 第一个是编译期检测, 即你需要通过练习代码中的提示信息和控制台编译器的报错, 修复代码的编译错误; 第二个是运行时检测, 即当前代码运行时是否能通过所有检查点。当修复编译错误并通过所有检查点时, 控制台就会显示当前练习通过并提示你进入下一个练习
+
+**代码练习文件示例**
+
+```cpp
 // mcpp-standard: https://github.com/Sunrisepeak/mcpp-standard
 // license: Apache-2.0
 // file: dslings/hello-mcpp.cpp
@@ -39,13 +96,11 @@ int main() {
 
     return 0;
 }
+```
 
-//// --- 更多详细介绍 | | |
-//                  V V V
-/*
+**控制台输出及解释**
 
-# [[ 控制台输出解读 ]]
-
+```bash
 🌏Progress: [>----------] 0/10 -->> 显示当前的练习进度
 
 [Target: 00-0-hello-mcpp] - normal -->> 当前的练习名
@@ -66,5 +121,16 @@ dslings/hello-mcpp.cpp -->> 当前检测的文件
 -------------------------
 
 Homepage: https://github.com/d2learn/xlings
+```
 
-*/
+## 3.资源于交流
+
+**交流群(Q):** 167535744
+
+**教程讨论版块:** [https://forum.d2learn.org/category/20](https://forum.d2learn.org/category/20)
+
+**xlings:** [https://github.com/d2learn/xlings](https://github.com/d2learn/xlings)
+
+**教程仓库:** [https://github.com/Sunrisepeak/mcpp-standard](https://github.com/Sunrisepeak/mcpp-standard)
+
+**教程视频合集:** [https://space.bilibili.com/65858958/lists/5208246](https://space.bilibili.com/65858958/lists/5208246)
