@@ -55,7 +55,18 @@ target("cpp11-04-rvalue-references")
     add_cxxflags("-fno-elide-constructors")
     add_files("04-rvalue-references.cpp")
 
--- target: cpp11-04-rvalue-references
+-- target: cpp11-05-move-semantics
 
 target("cpp11-05-move-semantics-0")
     add_files("05-move-semantics-0.cpp")
+
+target("cpp11-05-move-semantics-1")
+    add_files("05-move-semantics-1.cpp")
+
+-- target: cpp11-06-scoped-enums
+
+target("cpp11-06-scoped-enums-0")
+    add_files("06-scoped-enums-0.cpp")
+
+target("cpp11-06-scoped-enums-1")
+    add_files("06-scoped-enums-1.cpp")

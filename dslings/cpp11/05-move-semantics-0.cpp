@@ -2,7 +2,7 @@
 // license: Apache-2.0
 // file: dslings/cpp11/05-move-semantics-0.cpp
 //
-// Exercise/练习: cpp11 | 04 - move semantics | 移动构造与触发时机
+// Exercise/练习: cpp11 | 05 - move semantics | 移动构造与触发时机
 //
 // Tips/提示: 观察编译器输出, 在不改变buff传递的逻辑, 使得只做一次资源的分配和释放
 //
@@ -39,10 +39,7 @@ struct Buffer {
             delete[] data;
         }
     }
-    const int * data_ptr() const {
-        std::cout << "data[0] = " << data[0] << ", data[1] = " << data[1] << std::endl;
-        return data;
-    }
+    const int * data_ptr() const { return data; }
 };
 
 Buffer process(Buffer buff) {
@@ -50,22 +47,26 @@ Buffer process(Buffer buff) {
     return buff;
 }
 
-int main() { // 无编译器优化
+int main() {
     {
         Buffer buff1 = process(Buffer());
         auto buff1DataPtr = buff1.data_ptr();
+
         std::cout << " --- " << std::endl;
+
         Buffer buff2(std::move(buff1));
         auto buff2DataPtr = buff2.data_ptr();
-        std::cout << " --- " << std::endl;
+
+        d2x_assert(buff1DataPtr == buff2DataPtr);
+
         Buffer buff3 = buff2;
         auto buff3DataPtr = buff3.data_ptr();
-        std::cout << " --- " << std::endl;
+
+        d2x_assert(buff2DataPtr == buff3DataPtr);
+
         Buffer buff4 = process(buff3);
         auto buff4DataPtr = buff4.data_ptr();
 
-        d2x_assert(buff1DataPtr == buff2DataPtr);
-        d2x_assert(buff2DataPtr == buff3DataPtr);
         d2x_assert(buff3DataPtr == buff4DataPtr);
     }
 
