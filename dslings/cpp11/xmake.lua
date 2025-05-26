@@ -63,6 +63,9 @@ target("cpp11-05-move-semantics-0")
 target("cpp11-05-move-semantics-1")
     add_files("05-move-semantics-1.cpp")
 
+target("cpp11-05-move-semantics-2")
+    add_files("05-move-semantics-2.cpp")
+
 -- target: cpp11-06-scoped-enums
 
 target("cpp11-06-scoped-enums-0")
