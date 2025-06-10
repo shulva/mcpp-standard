@@ -73,3 +73,12 @@ target("cpp11-06-scoped-enums-0")
 
 target("cpp11-06-scoped-enums-1")
     add_files("06-scoped-enums-1.cpp")
+
+-- target: cpp11-06-scoped-enums
+
+target("cpp11-07-constexpr-0")
+    add_cxxflags("-Wpedantic -Werror")
+    add_files("07-constexpr-0.cpp")
+
+target("cpp11-07-constexpr-1")
+    add_files("07-constexpr-1.cpp")

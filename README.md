@@ -79,6 +79,8 @@ xlings checker [name]
 | | | 移动的不是对象而是资源 | [code](dslings/cpp11/05-move-semantics-2.cpp) / [video](https://www.bilibili.com/video/BV1P9jRzXE3a) | |
 | | `06 - 作用域枚举` | 传统枚举的问题 | [code](dslings/cpp11/06-scoped-enums-0) / [video](https://www.bilibili.com/video/BV1fn7iz4EuR) | |
 | | | 作用域枚举的基本用法 | [code](dslings/cpp11/06-scoped-enums-1) / [video](https://www.bilibili.com/video/BV1fn7iz4EuR) | |
+| | `07 - constexpr` | const和constexpr有什么不同 | [code](dslings/cpp11/07-constexpr-0) / [video]() | |
+| | | 编译期计算应用示例 | [code](dslings/cpp11/07-constexpr-1) / [video]() | |
 
 ## 2.社区 | 交流
 
