@@ -5,6 +5,8 @@
 | [代码/视频列表](videos/README.md) - [论坛](https://forum.d2learn.org/category/20) - [使用说明](book/src/chapter_1.md) |
 | --- |
 
+<img width="512" alt="Image" src="https://github.com/user-attachments/assets/8d455984-0d4f-4703-8c4b-120c4d2ba868" />
+
 ---
 
 ## 0.快速开始
