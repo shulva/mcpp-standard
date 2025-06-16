@@ -25,17 +25,17 @@
 
 int main() {
 
-    std::cout << "hello, mcpp!" << std:endl; // 0.修复这个编译错误
+    std::cout << "hello, mcpp!" << std::endl; // 0.修复这个编译错误
 
-    int a = 1.1; // 1.修复这个运行时错误, 修改int为double, 通过检查
+    double a = 1.1; // 1.修复这个运行时错误, 修改int为double, 通过检查
 
     d2x_assert_eq(a, 1.1); // 2.运行时检查点, 需要修复代码通过所有检查点(不能直接删除检查点代码)
 
-    D2X_YOUR_ANSWER b = a; // 3.修复这个编译错误, 给b一个合适的类型
+    int b = a; // 3.修复这个编译错误, 给b一个合适的类型
 
     d2x_assert_eq(b, 1); // 4.运行时检查点2
 
-    D2X_WAIT // 5.删除或注释掉这个宏, 进入下一个练习(项目正式代码练习)
+    //D2X_WAIT // 5.删除或注释掉这个宏, 进入下一个练习(项目正式代码练习)
 
     return 0;
 }
