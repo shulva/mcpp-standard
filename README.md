@@ -41,6 +41,8 @@
 ## 快速开始
 
 > 通过使用[xlings](https://github.com/d2learn/xlings)获取项目并运行**编译器驱动开发模式**(自动化检测)来进行代码练习
+>
+> - 环境搭建演示视频: [windows](https://www.bilibili.com/video/BV1L4KuzEEcE) - [linux](https://www.bilibili.com/video/BV182MtzPEiX?p=2) - [macos](https://www.bilibili.com/video/BV182MtzPEiX?p=2)
 
 <details>
   <summary>点击查看xlings安装命令</summary>
@@ -116,7 +118,9 @@ xlings checker [name]
 ## 社区 | 交流
 
 - **即时交流(QQ群):** 167535744
-- **练习代码/技术交流&讨论:** [论坛版块](https://forum.d2learn.org/category/20)
+- [**论坛版块:**](https://forum.d2learn.org/category/20): 项目相关的练习代码、技术交流和讨论
+
+> **注:** 复杂性问题(技术、环境搭建等问题)推荐在论坛发帖, 并详细描述问题细节, 能更有效于问题的解决和复用
 
 ## 参与项目 | 社区贡献
 
