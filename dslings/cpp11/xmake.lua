@@ -1,4 +1,8 @@
-set_languages("cxx11")
+if is_host("windows") then
+    set_languages("cxx14")
+else
+    set_languages("cxx11")
+end
 
 -- target: cpp11-00-auto-and-decltype
 
