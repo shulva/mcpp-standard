@@ -49,7 +49,7 @@
 
 ---
 
-#### Linux
+#### Linux/MacOS
 
 ```bash
 curl -fsSL https://d2learn.org/xlings-install.sh | bash
@@ -58,7 +58,7 @@ curl -fsSL https://d2learn.org/xlings-install.sh | bash
 #### Windows - PowerShell
 
 ```bash
-Invoke-Expression (Invoke-Webrequest 'https://d2learn.org/xlings-install.ps1.txt' -UseBasicParsing).Content
+irm https://d2learn.org/xlings-install.ps1.txt | iex
 ```
 
 > 注: xlings包含所需的xim和d2x工具 -> [详情](https://d2learn.org/xlings)
