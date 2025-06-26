@@ -32,7 +32,7 @@
 ## 交互式代码练习
 
 - 🌍练习进度/状态显示
-- 📄自动定位练习代码文件
+- 📍自动定位练习代码文件
 - ✅实时的代码检查和结果验证
 - 🤖~AI智能**代码引导**~
 
@@ -126,3 +126,14 @@ xlings checker [name]
 
 - **参与社区交流:** 反馈问题、参与社区问题讨论
 - **参与项目维护和开发:** 参与社区中问题处理、修复Bug、开发&优化新功能/模块
+
+**📑开源协议与贡献许可(License & CLA)**
+
+- 本项目欢迎自由使用与分发！你可以在 [Apache License 2.0](LICENSE-CODE) 和 [CC-BY-NC-SA 4.0](LICENSE-BOOK) 协议下**免费**使用、修改和分享本项目的代码与文档内容  
+- 如希望参与贡献代码或文档，请先阅读[贡献者许可协议（CLA）](CLA.md)
+
+**👥贡献者**
+
+<a href="https://github.com/Sunrisepeak/mcpp-standard/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Sunrisepeak/mcpp-standard" />
+</a>
