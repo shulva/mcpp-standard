@@ -18,3 +18,5 @@
 | | | 作用域枚举的基本用法 | [code](dslings/cpp11/06-scoped-enums-1.cpp) / [video](https://www.bilibili.com/video/BV1fn7iz4EuR) | |
 | | `07 - constexpr` | const和constexpr有什么不同 | [code](dslings/cpp11/07-constexpr-0.cpp) / [video](https://www.bilibili.com/video/BV1LRMLzgE4w) | |
 | | | 编译期计算应用示例 | [code](dslings/cpp11/07-constexpr-1.cpp) / [video](https://www.bilibili.com/video/BV15CMEzLEuN) | |
+| | `08 - literal-type` | 什么是字面值类型 | [code](dslings/cpp11/08-literal-type-0.cpp) / [video](https://www.bilibili.com/video/BV1h23UzvEX6) | [编译期加密库示例](https://github.com/Sunrisepeak/honly/blob/main/honly_jiami.hpp) |
+| | | 如何定义一个字面值类型 | [code](dslings/cpp11/08-literal-type-1.cpp) / [video](https://www.bilibili.com/video/BV1h23UzvEX6) | |
