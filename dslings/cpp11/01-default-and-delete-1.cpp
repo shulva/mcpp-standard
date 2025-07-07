@@ -23,6 +23,10 @@
 struct UniquePtr {
     void *dataPtr;
     UniquePtr() = default;
+    UniquePtr(const UniquePtr &) = delete; // 禁止拷贝构造函数
+    UniquePtr& operator=(const UniquePtr &) = delete; // 禁止拷贝赋值运算符
+    UniquePtr(UniquePtr &&) = default; // 允许移动构造函数
+    UniquePtr& operator=(UniquePtr &&) = default; // 允许移动赋值运算符
 };
 
 int main() { // 不要直接修改main函数中的代码
@@ -42,7 +46,7 @@ int main() { // 不要直接修改main函数中的代码
     // a = std::move(c); // ok
     d2x_assert(std::is_move_assignable<UniquePtr>::value == true);
 
-    D2X_WAIT
+    //D2X_WAIT
 
     return 0;
 }

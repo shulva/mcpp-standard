@@ -37,22 +37,22 @@ int main() {
     // obj的类型推导 和 (obj) 的类型推导
     type_check = std::is_same<decltype(obj), const Object>::value;
     d2x_assert(type_check); type_check = false; // dont change this line
-    type_check = std::is_same<decltype((obj)), D2X_YOUR_ANSWER>::value;
+    type_check = std::is_same<decltype((obj)), const Object&>::value;
     d2x_assert(type_check); type_check = false; // dont change this line
 
     // obj.a的类型推导 和 (obj.a) 的类型推导
-    type_check = std::is_same<decltype(obj.a), D2X_YOUR_ANSWER>::value;
+    type_check = std::is_same<decltype(obj.a), const int>::value;
     d2x_assert(type_check); type_check = false; // dont change this line
-    type_check = std::is_same<decltype((obj.a)), D2X_YOUR_ANSWER>::value;
+    type_check = std::is_same<decltype((obj.a)), const int&>::value;
     d2x_assert(type_check); type_check = false; // dont change this line
 
     // obj.b的类型推导 和 (obj.b) 的类型推导
-    type_check = std::is_same<decltype(obj.b), D2X_YOUR_ANSWER>::value;
+    type_check = std::is_same<decltype(obj.b),double>::value;
     d2x_assert(type_check); type_check = false; // dont change this line
-    type_check = std::is_same<decltype((obj.b)), D2X_YOUR_ANSWER>::value;
+    type_check = std::is_same<decltype((obj.b)),const double&>::value;
     d2x_assert(type_check); type_check = false; // dont change this line
 
-    D2X_WAIT
+    //D2X_WAIT
 
     return 0;
 }

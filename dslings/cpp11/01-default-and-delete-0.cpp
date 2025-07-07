@@ -22,10 +22,11 @@
 // default和delete显式控制 -> 编译器默认构造函数的生成行为
 struct A { };
 struct B {
+    B() = default;
     B(int x) { std::cout << "B(int x)" << std::endl; }
 };
 struct C {
-    C() { }
+    C() = delete;
     C(int x = 1) { std::cout << "C(int x = 1)" << std::endl; }
 };
 
@@ -35,7 +36,7 @@ int main() { // 不要直接修改main函数中的代码
     B b;
     C c(1);
 
-    D2X_WAIT
+    //DhX_WAIT
 
     return 0;
 }

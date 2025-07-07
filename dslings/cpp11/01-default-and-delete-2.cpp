@@ -29,9 +29,9 @@ void func(float) = delete;
 int main() {
 
     func(1);     // int
-    func(1.1f);  // float
+    //func(1.1f);  // float ->注释掉不被允许的函数调用
 
-    D2X_WAIT
+    //D2X_WAIT
 
     return 0;
 }

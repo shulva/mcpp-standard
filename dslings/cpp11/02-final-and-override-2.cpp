@@ -51,12 +51,13 @@ struct  MP3Player : AudioPlayer {
 };
 
 struct OGGPlayer : AudioPlayer {
-    // 正确实现OGGPlayer
+    // 正确实现OGGPlayeo
 
-    void play() override {
-        // init_audio_params();
+    void init_audio_params() override {
         std::cout << "OGGPlayer: Initializing audio parameters..." << std::endl;
-        // play_audio();
+    }
+
+    void play_audio() override {
         std::cout << "OGGPlayer: Playing OGG audio..." << std::endl;
     }
 
@@ -77,7 +78,7 @@ int main() { // 不要直接修改main函数中的代码
     delete player2;
     delete player3;
 
-    D2X_WAIT
+    //D2X_WAIT
 
     return 0;
 }
