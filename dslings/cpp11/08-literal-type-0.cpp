@@ -28,10 +28,11 @@ constexpr std::array<int, 3> to_array(const char *str /*, len = 3 */) {
     return {str[0] - '0', str[1] - '0', str[2] - '0'};
 }
 
-constexpr std::string to_string(const std::array<int, 3> &arr) {
-    return std::string(1, '0' + arr[0]) +
-           std::string(1, '0' + arr[1]) +
-           std::string(1, '0' + arr[2]);
+constexpr std::array<char,4> to_string(const std::array<int, 3> &arr) {
+    return {static_cast<char>(arr[0] + '0'),
+                     static_cast<char>(arr[1] + '0'),
+                     static_cast<char>(arr[2] + '0'),
+                     '\0'};
 }
 
 int main() {
@@ -40,7 +41,7 @@ int main() {
     constexpr char c = 'A';
     constexpr int a = 1;
     constexpr std::array<int, 3> arr = {1, 2, 3};
-    constexpr std::string str = "123";
+    constexpr char* str = "123";
 
     constexpr auto result = compile_time_compute(c, a);
     std::cout << result << std::endl;
@@ -54,7 +55,7 @@ int main() {
 
     std::cout << "1 + 2 + 3 = " <<  sum << std::endl;
 
-    D2X_WAIT
+    //D2X_WAIT
 
     return 0;
 }

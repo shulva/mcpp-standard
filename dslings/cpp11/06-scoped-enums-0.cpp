@@ -28,7 +28,7 @@ enum Color {
 enum Fruit {
     Apple,
     Banana,
-    ORANGE // 1.类型冲突 - 橙子
+    ORANGE2 // 1.类型冲突 - 橙子
 };
 
 int main() {
@@ -42,14 +42,14 @@ int main() {
     // 2.符合语法, 但逻辑错误的类型匹配
     if (color == Apple) { // 不要删除这行代码
         // 代码会运行到这里
-        D2X_WAIT
+        //D2X_WAIT
     }
 
     if (fruit == RED) {
-        D2X_WAIT
+        //D2X_WAIT
     }
 
-    D2X_WAIT
+    //D2X_WAIT
 
     return 0;
 }

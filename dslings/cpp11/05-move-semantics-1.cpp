@@ -88,13 +88,13 @@ int main() { // 无编译器优化
 
         d2x_assert_eq(move_assignment_counter, 2);
 
-        buff2 = buff1; // 情况3: 显示移动赋值
+        buff2 = std::move(buff1); // 情况3: 显示移动赋值
 
         d2x_assert_eq(move_assignment_counter, 3);
 
     }
 
-    D2X_WAIT
+    //D2X_WAIT
 
     return 0;
 }

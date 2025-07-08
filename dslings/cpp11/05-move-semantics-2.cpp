@@ -70,7 +70,7 @@ int main() { // 移动语义 - 移动的是资源而不是对象演示
 
         auto old_b1_data_ptr = b1.data_ptr();
 
-        Buffer b2 = b1; // std::move(b1);
+        Buffer b2 = std::move(b1); // std::move(b1);
 
         d2x_assert(&b1 != &b2); // b1 和 b2 是不同的对象
         d2x_assert(old_b1_data_ptr == b2.data_ptr());
@@ -78,7 +78,7 @@ int main() { // 移动语义 - 移动的是资源而不是对象演示
 
     }
 
-    D2X_WAIT
+    //D2X_WAIT
 
     return 0;
 }

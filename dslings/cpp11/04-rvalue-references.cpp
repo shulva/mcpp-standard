@@ -43,7 +43,7 @@ int main() { // 关闭编译器优化
         std::cout << "--------代码可修改区域-开始--------" << std::endl;
 
 
-        const Object &objRef = Object(); // 延长临时对象的生命周期
+        Object &&objRef = Object(); // 延长临时对象的生命周期
 
 
         std::cout << "--------代码可修改区域-结束--------" << std::endl;
@@ -53,7 +53,7 @@ int main() { // 关闭编译器优化
         d2x_assert((&objRef == object_address));
     }
 
-    D2X_WAIT
+    //D2X_WAIT
 
     return 0;
 }
