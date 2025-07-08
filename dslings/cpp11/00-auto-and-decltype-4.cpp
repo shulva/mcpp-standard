@@ -9,7 +9,9 @@
 // Docs/文档:
 //   - https://en.cppreference.com/w/cpp/language/auto
 //   - https://en.cppreference.com/w/cpp/language/decltype
-//   - http://forum.d2learn.org/post/357
+//   - https://github.com/Sunrisepeak/mcpp-standard/blob/main/book/src/cpp11/00-auto-and-decltype.md
+//
+// 练习交流讨论: http://forum.d2learn.org/post/357
 //
 // Auto-Checker/自动检测命令:
 //
