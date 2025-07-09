@@ -4,6 +4,7 @@ xname = "mcpp-standard" -- project name
 xdeps = {
     vscode = "",
     cpp = "", -- language
+    mdbook = "0.4.43", -- for d2x book
 }
 
 d2x = {
