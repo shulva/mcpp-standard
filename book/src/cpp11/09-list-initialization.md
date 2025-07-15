@@ -23,7 +23,7 @@ c++11之前不同场景有不同的初始化的方式
 int a = 5;              // 拷贝初始化
 int b(5);               // 直接初始化
 int arr[3] = {1, 2, 3}; // 数组初始化
-Object obj1;            // 默认初始化
+Object obj1;            // 默认构造
 Object obj2(obj1);      // 拷贝构造
 ```
 
@@ -45,7 +45,7 @@ Object obj2 { obj1 };       // 拷贝构造
 int a = 3.3; // ok
 int a = { 3.3 }; // error
 
-double b { 3.3 }; // ok
+constexpr double b { 3.3 }; // ok
 int c(b); // ok -> 3
 int c { b }; // error: 类型不匹配
 ```
@@ -54,8 +54,10 @@ int c { b }; // error: 类型不匹配
 
 ```cpp
 int arr[] = { 1, 2, 3.3, 4 }; // error: 3.3会发生窄化
-int arr[] = { 1, 2, b, 4 }; // error: b为double类型
+int arr[] = { 1, 2, b, 4 }; // error: b会发生窄化
 ```
+
+> 注: 如果b是运行时变量, 编译期可能只会触发窄化警告而不会报错
 
 ### 提高容器初始化的简洁性
 
@@ -94,6 +96,8 @@ MyVector v2 = {1, 2, 3, 4, 3};
 
 ### 避免初始化语法陷阱
 
+使用`{ }`调用默认构造函数, 避免语法陷阱
+
 ```cpp
 #include <iostream>
 
@@ -102,8 +106,8 @@ struct Object {
 };
 
 int main() {
-    Object obj1 { };   // 调用构造函数，输出信息
-    Object obj2();    // 声明了一个函数，什么都不会发生
+    Object obj1 { };
+    Object obj2(); // obj2是函数, 而不是Object对象
 }
 ```
 
