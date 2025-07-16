@@ -11,7 +11,7 @@
   -
   <a href="https://www.bilibili.com/video/BV182MtzPEiX" target="_blank">视频介绍</a>
   |
-  <a href="videos/README.md" target="_blank">视频列表</a>
+  <a href="videos/README.md" target="_blank">视频和动画</a>
   |
   <a href="https://forum.d2learn.org/category/20" target="_blank">论坛</a>
   |

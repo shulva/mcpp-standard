@@ -1,4 +1,15 @@
-# mcpp-standard 练习视频解读列表
+# mcpp-standard 解读视频/动画
+
+## 动画代码
+
+```python
+# manim -pql videos/[cppxx]/[filename].py
+manim -pql videos/cpp11/09-list-initialization.py
+```
+
+> Note: Manim Community v0.18.1
+
+## 视频列表
 
 | c++标准 | 特性 | 标题 | 练习代码/视频 | 备注 |
 | --- | --- | --- | --- | --- |
