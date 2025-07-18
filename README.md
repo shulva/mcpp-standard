@@ -7,18 +7,18 @@
 </div>
 
 <div align="center">
-  <a href="book/src/chapter_1.md" target="_blank">文档说明</a>
-  -
-  <a href="https://www.bilibili.com/video/BV182MtzPEiX" target="_blank">视频介绍</a>
+  <a href="book/src/chapter_1.md" target="_blank">电子书</a>
   |
-  <a href="videos/README.md" target="_blank">视频和动画</a>
+  <a href="https://www.bilibili.com/video/BV182MtzPEiX" target="_blank">介绍</a>
+  |
+  <a href="videos" target="_blank">视频/动画</a>
   |
   <a href="https://forum.d2learn.org/category/20" target="_blank">论坛</a>
   |
   <a href="https://github.com/d2learn/xlings" target="_blank">工具</a>
 </div>
 
-<div align=center><b>动手学现代C++核心特性</b> | 现代C++标准核心语言特性教程</div>
+<div align=center><b>动手学现代C++核心语言特性</b> | 交互式的代码练习</div>
 
 ---
 

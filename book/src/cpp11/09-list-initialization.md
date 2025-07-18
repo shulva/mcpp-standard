@@ -53,7 +53,7 @@ int c { b }; // error: 类型不匹配
 数组初始化中的窄化检查
 
 ```cpp
-int arr[] = { 1, 2, 3.3, 4 }; // error: 3.3会发生窄化
+int arr[] { 1, 2, 3.3, 4 }; // error: 3.3会发生窄化
 int arr[] = { 1, 2, b, 4 }; // error: b会发生窄化
 ```
 
@@ -64,15 +64,15 @@ int arr[] = { 1, 2, b, 4 }; // error: b会发生窄化
 对于容器类型的初始化, 老C++中常常会分成两个步骤。第一步, 创建一个元素数组; 第二步, 使用这个数组来初始化容器
 
 ```cpp
-int arr[] = {1, 2, 3, 4, 5};
+int arr[5] = {1, 2, 3, 4, 5};
 std::vector<int> v(arr, arr + sizeof(arr) / sizeof(int));
 ```
 
 而列表初始化的引入, 能让我们把两步合为一个步骤, 大幅度提高了容器初始化的简洁性
 
 ```cpp
-std::vector<int> v1 = {1, 2, 3};
-std::vector<int> v2 = {1, 2, 3, 4, 3};
+std::vector<int> v1 {1, 2, 3};
+std::vector<int> v2 {1, 2, 3, 4, 3};
 ```
 
 并且, 可以通过`std::initializer_list`让我们的自定义类型也能支持这种**不定长**的列表初始化方式
@@ -90,8 +90,8 @@ public:
 ```
 
 ```cpp
-MyVector v1 = {1, 2, 3};
-MyVector v2 = {1, 2, 3, 4, 3};
+MyVector v1 {1, 2, 3};
+MyVector v2 {1, 2, 3, 4, 3};
 ```
 
 ### 避免初始化语法陷阱

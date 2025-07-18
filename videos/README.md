@@ -31,3 +31,5 @@ manim -pql videos/cpp11/09-list-initialization.py
 | | | 编译期计算应用示例 | [code](/dslings/cpp11/07-constexpr-1.cpp) / [video](https://www.bilibili.com/video/BV15CMEzLEuN) | |
 | | `08 - literal-type` | 什么是字面值类型 | [code](/dslings/cpp11/08-literal-type-0.cpp) / [video](https://www.bilibili.com/video/BV1h23UzvEX6) | [编译期加密库示例](https://github.com/Sunrisepeak/honly/blob/main/honly_jiami.hpp) |
 | | | 如何定义一个字面值类型 | [code](/dslings/cpp11/08-literal-type-1.cpp) / [video](https://www.bilibili.com/video/BV1h23UzvEX6) | |
+| | `09 - 列表初始化` | 现代C++初始化风格 | [code](/dslings/cpp11/09-list-initialization-0.cpp) / [video](https://www.bilibili.com/video/BV1vKuQzkEo2) | |
+| | | -> | [code1](/dslings/cpp11/09-list-initialization-1.cpp) / [code2](/dslings/cpp11/09-list-initialization-2.cpp) / [code3](/dslings/cpp11/09-list-initialization-3.cpp)  | |
