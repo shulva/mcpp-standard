@@ -91,13 +91,13 @@ d2x book
 xlings checker
 ```
 
-### 指定练习进行检测
+### 同步最新的练习代码
+
+> 由于项目处于持续更新阶段, 可以使用下面的命令进行自动同步(如果同步失败, 可能需要手动用git进行更新项目代码)
 
 ```bash
-xlings checker [name]
+d2x update
 ```
-
-> 注: 练习名支持模糊匹配
 
 ## 练习及视频解读列表
 
@@ -119,7 +119,7 @@ xlings checker [name]
 | | | 作用域枚举的基本用法 | [code](/dslings/cpp11/06-scoped-enums-1.cpp) / [video](https://www.bilibili.com/video/BV1fn7iz4EuR) | |
 | | `07 - constexpr` | const和constexpr有什么不同 | [code](/dslings/cpp11/07-constexpr-0.cpp) / [video](https://www.bilibili.com/video/BV1LRMLzgE4w) | |
 | | | 编译期计算应用示例 | [code](/dslings/cpp11/07-constexpr-1.cpp) / [video](https://www.bilibili.com/video/BV15CMEzLEuN) | |
-| | [...](videos/README.md) | [...](videos/README.md) | [...](videos/README.md) |  |
+| | [...](/videos) | [...](/videos) | [...](/videos) |  |
 
 ## 社区 | 交流
 
