@@ -4,6 +4,7 @@ xname = "mcpp-standard" -- project name
 xdeps = {
     vscode = "",
     cpp = "", -- language
+    mdbook = "0.4.43", -- for d2x book
 }
 
 d2x = {
@@ -11,9 +12,18 @@ d2x = {
         name = "dslings",
         editor = "vscode",
     },
+
+    commands = {
+        update = {
+            linux = "tools/update_upstream.sh",
+            macosx = "tools/update_upstream.sh",
+            windows = [[tools\update_upstream.bat]],
+        },
+    },
+
     private = {
         -- project private attributes
-    }
+    },
 }
 
 --xlings_llm_config = "llm.config.xlings"

@@ -7,18 +7,18 @@
 </div>
 
 <div align="center">
-  <a href="book/src/chapter_1.md" target="_blank">文档说明</a>
-  -
-  <a href="https://www.bilibili.com/video/BV182MtzPEiX" target="_blank">视频介绍</a>
+  <a href="book/src/chapter_1.md" target="_blank">电子书</a>
   |
-  <a href="videos/README.md" target="_blank">视频列表</a>
+  <a href="https://www.bilibili.com/video/BV182MtzPEiX" target="_blank">介绍</a>
+  |
+  <a href="videos" target="_blank">视频/动画</a>
   |
   <a href="https://forum.d2learn.org/category/20" target="_blank">论坛</a>
   |
   <a href="https://github.com/d2learn/xlings" target="_blank">工具</a>
 </div>
 
-<div align=center><b>动手学现代C++核心特性</b> | 现代C++标准核心语言特性教程</div>
+<div align=center><b>动手学现代C++核心语言特性</b> | 交互式的代码练习</div>
 
 ---
 
@@ -91,13 +91,13 @@ d2x book
 xlings checker
 ```
 
-### 指定练习进行检测
+### 同步最新的练习代码
+
+> 由于项目处于持续更新阶段, 可以使用下面的命令进行自动同步(如果同步失败, 可能需要手动用git进行更新项目代码)
 
 ```bash
-xlings checker [name]
+d2x update
 ```
-
-> 注: 练习名支持模糊匹配
 
 ## 练习及视频解读列表
 
@@ -119,7 +119,7 @@ xlings checker [name]
 | | | 作用域枚举的基本用法 | [code](/dslings/cpp11/06-scoped-enums-1.cpp) / [video](https://www.bilibili.com/video/BV1fn7iz4EuR) | |
 | | `07 - constexpr` | const和constexpr有什么不同 | [code](/dslings/cpp11/07-constexpr-0.cpp) / [video](https://www.bilibili.com/video/BV1LRMLzgE4w) | |
 | | | 编译期计算应用示例 | [code](/dslings/cpp11/07-constexpr-1.cpp) / [video](https://www.bilibili.com/video/BV15CMEzLEuN) | |
-| | [...](videos/README.md) | [...](videos/README.md) | [...](videos/README.md) |  |
+| | [...](/videos) | [...](/videos) | [...](/videos) |  |
 
 ## 社区 | 交流
 

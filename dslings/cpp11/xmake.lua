@@ -94,3 +94,17 @@ target("cpp11-08-literal-type-0")
 
 target("cpp11-08-literal-type-1")
     add_files("08-literal-type-1.cpp")
+
+-- target: cpp11-09-list-initialization
+
+target("cpp11-09-list-initialization-0")
+    add_files("09-list-initialization-0.cpp")
+
+target("cpp11-09-list-initialization-1")
+    add_files("09-list-initialization-1.cpp")
+
+target("cpp11-09-list-initialization-2")
+    add_files("09-list-initialization-2.cpp")
+
+target("cpp11-09-list-initialization-3")
+    add_files("09-list-initialization-3.cpp")

@@ -32,6 +32,14 @@ Invoke-Expression (Invoke-Webrequest 'https://d2learn.org/xlings-install.ps1.txt
 xlings install d2x:mcpp-standard
 ```
 
+### 本地电子书
+
+> 可以在项目目录执行`d2x book`命令, 打开本地文档(包含使用说明和电子书)
+
+```bash
+d2x book
+```
+
 ### 练习代码自动检测
 
 > 进入项目目录`mcpp-standard`运行checker命令, 进入练习代码自动检测程序
@@ -47,6 +55,14 @@ xlings checker [name]
 ```
 
 > 注: 练习名支持模糊匹配
+
+### 同步最新的练习代码
+
+> 由于项目处于持续更新阶段, 可以使用下面的命令进行自动同步(如果同步失败, 可能需要手动用git进行更新项目代码)
+
+```bash
+d2x update
+```
 
 ## 2.自动化检测程序简介
 

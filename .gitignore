@@ -31,7 +31,12 @@
 *.out
 *.app
 
+# Python
+__pycache__
+
 # d2x project files
 .xlings
 .vscode
 llm.config.xlings
+media
+
