@@ -26,7 +26,9 @@ class MyVector {
     int mSize;
 
 public:
-    D2X_YOUR_ANSWER
+    MyVector(std::initializer_list<int> list){
+        mSize = list.size();
+    }
 
     int size() const {
         return mSize;
@@ -45,7 +47,7 @@ int main() {
     MyVector myVec2 { 1, 2, 3, 4, 5 };
     d2x_assert_eq(myVec2.size(), 5);
 
-    D2X_WAIT
+    //D2X_WAIT
 
     return 0;
 }

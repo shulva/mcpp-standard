@@ -64,6 +64,13 @@ public:
 struct Point {
     int x, y;
 
+    Point(std::initializer_list<int> list){
+        const int *begin = list.begin();
+
+        x = *begin;
+        y = *(begin+1);
+    }
+
     Point() : x {0}, y{0} { }
 };
 
@@ -80,9 +87,9 @@ int main() {
     MyVector vec3(1, 10);
     d2x_assert_eq(vec3.size(), 10);
     MyVector vec4 { 1, 10 };
-    d2x_assert_eq(vec4.size(), 10);
+    d2x_assert_eq(vec4.size(), 2);
 
-    D2X_WAIT
+    //D2X_WAIT
 
     return 0;
 }
