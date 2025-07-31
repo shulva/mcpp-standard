@@ -22,6 +22,15 @@
 
 ---
 
+## 更新日志
+
+> 持续更新中
+
+- **book:** [委托构造函数](https://github.com/Sunrisepeak/mcpp-standard/blob/main/book/src/cpp11/10-delegating-constructors.md) - 2025/08/01
+- **更多 -> [changelog](https://github.com/Sunrisepeak/mcpp-standard/blob/main/book/src/changelog.md)**
+
+---
+
 ## 目标
 
 - **1.** 任何人都可以在网上**免费获取**课程资源
