@@ -26,17 +26,37 @@
 
 > 持续更新中
 
-- **book:** [委托构造函数](https://github.com/Sunrisepeak/mcpp-standard/blob/main/book/src/cpp11/10-delegating-constructors.md) - 2025/08/01
-- **更多 -> [changelog](https://github.com/Sunrisepeak/mcpp-standard/blob/main/book/src/changelog.md)**
+**cpp11 - 10 - 委托构造函数**
+
+- **[code-0](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/cpp11/10-delegating-constructors-0.cpp) / [code-1](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/cpp11/10-delegating-constructors-1.cpp)** - 2025/08/02
+- **[book](https://github.com/Sunrisepeak/mcpp-standard/blob/main/book/src/cpp11/10-delegating-constructors.md)** - 2025/08/01
+
+**获取最新内容并进入自动检测**
+
+```bash
+d2x update
+d2x checker delegating-constructors
+```
+
+更多 -> [changelog](https://github.com/Sunrisepeak/mcpp-standard/blob/main/book/src/changelog.md)
 
 ---
 
 ## 目标
 
+**项目视角**
+
 - **1.** 任何人都可以在网上**免费获取**课程资源
 - **2.** 强调通过**动手实践/代码练习**的方式来学习
 - **3.** 提供**自动化的代码练习 + 方便的环境搭建**的工具支持
 - **4.** 通过社区共享、共建、互助实现良性循环 - **开源 + 论坛**
+
+**使用者视角**
+
+- [掌握] - **现代C++核心的语言特性**及使用场景
+- [掌握] - 通过编译器报错信息**定位问题的能力**
+- [熟悉] - 通过文档和cppreference解决C++中不熟悉问题的能力
+- [了解] - 如何参与技术社区 - 开源项目的使用、提问题、参与讨论或贡献的姿势
 
 ## 交互式代码练习
 

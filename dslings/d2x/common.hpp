@@ -28,6 +28,7 @@
 
 #define D2X_WAIT HONLY_LOGW("🥳 Delete the D2X_WAIT to continue...");
 #define D2X_YOUR_ANSWER
+#define D2X_DONT_DELETE_THIS(x) x
 
 template<typename F, typename... Args>
 class d2x_is_invocable {

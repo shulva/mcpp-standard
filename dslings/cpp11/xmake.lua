@@ -108,3 +108,11 @@ target("cpp11-09-list-initialization-2")
 
 target("cpp11-09-list-initialization-3")
     add_files("09-list-initialization-3.cpp")
+
+-- target: cpp11-10-delegating-constructors
+
+target("cpp11-10-delegating-constructors-0")
+    add_files("10-delegating-constructors-0.cpp")
+
+target("cpp11-10-delegating-constructors-1")
+    add_files("10-delegating-constructors-1.cpp")
