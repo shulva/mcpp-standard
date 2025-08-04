@@ -33,3 +33,5 @@ manim -pql videos/cpp11/09-list-initialization.py
 | | | 如何定义一个字面值类型 | [code](/dslings/cpp11/08-literal-type-1.cpp) / [video](https://www.bilibili.com/video/BV1h23UzvEX6) | |
 | | `09 - 列表初始化` | 现代C++初始化风格 | [code](/dslings/cpp11/09-list-initialization-0.cpp) / [video](https://www.bilibili.com/video/BV1vKuQzkEo2) | |
 | | | -> | [code1](/dslings/cpp11/09-list-initialization-1.cpp) / [code2](/dslings/cpp11/09-list-initialization-2.cpp) / [code3](/dslings/cpp11/09-list-initialization-3.cpp)  | |
+| | `10 - 委托构造函数` | 委托构造基础用法和注意事项 | [code](/dslings/cpp11/10-delegating-constructors-0.cpp) / [video](https://www.bilibili.com/video/BV1zft3zSEER) | |
+| | | -> | [code1](/dslings/cpp11/10-delegating-constructors-1.cpp) | |
