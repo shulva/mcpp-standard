@@ -4,7 +4,7 @@
 
 | Book | Video | Code | X |
 | --- | --- | --- | --- |
-| [cppreference](https://en.cppreference.com/w/cpp/language/initializer_list.html#Delegating_constructor) / [markdown](https://github.com/Sunrisepeak/mcpp-standard/blob/main/book/src/cpp11/10-delegating-constructors.md) | [视频解读](https://www.bilibili.com/video/BV1zft3zSEER) | [练习代码](https://www.bilibili.com/video/BV1vKuQzkEo2) | [练习代码](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/cpp11/10-delegating-constructors-0.cpp) |  |
+| [cppreference](https://en.cppreference.com/w/cpp/language/initializer_list.html#Delegating_constructor) / [markdown](https://github.com/Sunrisepeak/mcpp-standard/blob/main/book/src/cpp11/10-delegating-constructors.md) | [视频解读](https://www.bilibili.com/video/BV1zft3zSEER) | [练习代码](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/cpp11/10-delegating-constructors-0.cpp)  |  |
 
 **为什么引入?**
 
