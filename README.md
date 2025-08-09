@@ -173,3 +173,5 @@ d2x update
 <a href="https://github.com/Sunrisepeak/mcpp-standard/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Sunrisepeak/mcpp-standard" />
 </a>
+
+<a href="https://hellogithub.com/repository/Sunrisepeak/mcpp-standard" target="_blank"><img src="https://api.hellogithub.com/v1/widgets/recommend.svg?rid=7877f7cb12e940a5a432d49c19a360df&claim_uid=aNLTSv91Awj8ruX&theme=dark" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" /></a>
