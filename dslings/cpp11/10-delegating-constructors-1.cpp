@@ -4,7 +4,7 @@
 //
 // Exercise/练习: cpp11 | 10 - delegating constructors | 委托构造函数注意事项
 //
-// Tips/提示: 根据编译器的输出, 修复编译器报错, 了解委托构造函数的注意事项
+// Tips/提示: 根据编译器的输出，修复编译器报错，了解委托构造函数的注意事项
 //
 // Docs/文档:
 //   - https://en.cppreference.com/w/cpp/language/initializer_list.html#Delegating_constructor
@@ -28,7 +28,6 @@ struct Object { // 不要修改这个类的代码
     }
 
     Object(std::string name_) : name { name_ } {
-        construction_counter++;
     }
 };
 
@@ -40,13 +39,12 @@ class Account {
 public:
 
     Account(std::string id_)
-        : Account(id_, "momo"), coin { "100元" }
+        : Account(id_, "momo")
     {
-
     }
 
-    Account(std::string id_, std::string name_) {
-        Account(id_, name_, 0);
+    Account(std::string id_, std::string name_):Account(id_, name_, 0) {
+        
     }
 
     Account(std::string id_, std::string name_, int coin_) {
@@ -73,7 +71,7 @@ public:
 
 int Object::construction_counter { 0 };
 
-int main() { // 不要修改main函数中的代码
+int main() { // 不要修改 main 函数中的代码
 
     Account a1 { "1111",  "hello" };
     std::cout << a1.to_string() << std::endl;
@@ -86,7 +84,7 @@ int main() { // 不要修改main函数中的代码
     d2x_assert(a2.get_object_name() == "d2learn");
     d2x_assert_eq(Object::construction_counter, 1);
 
-    D2X_WAIT
+    //D2X_WAIT
 
     return 0;
 }

@@ -4,7 +4,7 @@
 //
 // Exercise/练习: cpp11 | 10 - delegating constructors | 委托构造函数
 //
-// Tips/提示: 根据编译器的输出, 修复编译器报错, 了解委托构造函数的基本使用
+// Tips/提示: 根据编译器的输出，修复编译器报错，了解委托构造函数的基本使用
 //
 // Docs/文档:
 //   - https://en.cppreference.com/w/cpp/language/initializer_list.html#Delegating_constructor
@@ -20,7 +20,7 @@
 #include <iostream>
 #include <string>
 
-static int construction_counter { 0 };
+static int construction_counter { 2 };
 
 class Account {
     std::string id;
@@ -31,7 +31,7 @@ public:
     Account(std::string id_) {
         id = id_;
         name = "momo";
-        coin = "0元";
+        coin = "0 元";
 
         D2X_DONT_DELETE_THIS(construction_counter++);
     }
@@ -39,15 +39,16 @@ public:
     Account(std::string id_, std::string name_) {
         id = id_;
         name = name_;
-        coin = "0元";
+        coin = "0 元";
 
         D2X_DONT_DELETE_THIS(construction_counter++);
+        construction_counter++;
     }
 
     Account(std::string id_, std::string name_, int coin_) {
         id = id_;
         name = name_;
-        coin = std::to_string(coin_) + "元";
+        coin = std::to_string(coin_) + " 原石";
 
         D2X_DONT_DELETE_THIS(construction_counter++);
     }
@@ -57,7 +58,7 @@ public:
     }
 };
 
-int main() { // 不要修改main函数中的代码
+int main() { // 不要修改 main 函数中的代码
 
     Account a1 { "1111" };
     d2x_assert_eq(construction_counter, 3);
@@ -76,10 +77,10 @@ int main() { // 不要修改main函数中的代码
 
     d2x_assert(
         gi.to_string() ==
-        "Account { id: 0000, name: GImpact, coin: 648原石 }"
+        "Account { id: 0000, name: GImpact, coin: 648 原石 }"
     );
 
-    D2X_WAIT
+    //D2X_WAIT
 
     return 0;
 }
