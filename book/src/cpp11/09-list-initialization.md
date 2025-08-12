@@ -4,7 +4,7 @@
 
 | Book | Video | Code | X | 
 | --- | --- | --- | --- |
-| [cppreference](https://en.cppreference.com/w/cpp/language/list_initialization.html) / [markdown](https://github.com/Sunrisepeak/mcpp-standard/blob/main/book/src/cpp11/09-list-initialization.md) | [视频解读]() | [练习代码]() |  |
+| [cppreference](https://en.cppreference.com/w/cpp/language/list_initialization.html) / [markdown](https://github.com/Sunrisepeak/mcpp-standard/blob/main/book/src/cpp11/09-list-initialization.md) | [视频解读](https://www.bilibili.com/video/BV1vKuQzkEo2) | [练习代码](https://github.com/Sunrisepeak/mcpp-standard/blob/main/dslings/cpp11/09-list-initialization-0.cpp) |  |
 
 **为什么引入?**
 
