@@ -1,10 +1,9 @@
-// mcpp-standard: https://github.com/Sunrisepeak/mcpp-standard
 // license: Apache-2.0
 // file: dslings/cpp11/08-literal-type-0.cpp
 //
 // Exercise/练习: cpp11 | 08 - literal type | 什么是字面值类型
 //
-// Tips/提示: 根据编译器的输出, 修复编译器报错, 了解字面值类型的概念
+// Tips/提示: 根据编译器的输出，修复编译器报错，了解字面值类型的概念
 //
 // Docs/文档:
 //   - https://en.cppreference.com/w/cpp/named_req/LiteralType.html
@@ -41,7 +40,7 @@ int main() {
     constexpr char c = 'A';
     constexpr int a = 1;
     constexpr std::array<int, 3> arr = {1, 2, 3};
-    constexpr char* str = "123";
+    const constexpr char* str = "123";
 
     constexpr auto result = compile_time_compute(c, a);
     std::cout << result << std::endl;
@@ -50,7 +49,7 @@ int main() {
     constexpr auto arr_to_str = to_string(arr);
     std::cout << arr_to_str.data() << std::endl;
 
-    constexpr auto str_to_arr = to_array(str);
+    const constexpr auto str_to_arr = to_array(str);
     constexpr int sum = str_to_arr[0] + str_to_arr[1] + str_to_arr[2];
 
     std::cout << "1 + 2 + 3 = " <<  sum << std::endl;
